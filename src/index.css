@@ -1,0 +1,173 @@
+/* ---- iOS Inspired Global Styles ---- */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", sans-serif;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* App Container with iOS-like frosted glass effect */
+.app-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* iOS-style Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-bar button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* iOS-style Weather Display */
+.weather-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 85%;
+    max-width: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.city {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.local-time {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.big-temp {
+    font-size: 5.5rem;
+    font-weight: 300;
+    margin: 20px 0 10px;
+    letter-spacing: -3px;
+}
+
+.condition {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.high-low {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+/* iOS-style Dynamic Backgrounds */
+.sunny-bg {
+    background: linear-gradient(135deg, #FF9D00, #FF2D00);
+}
+
+.rainy-bg {
+    background: linear-gradient(135deg, #0077B6, #00B4D8);
+}
+
+.snowy-bg {
+    background: linear-gradient(135deg, #6E8EFB, #A777E3);
+}
+
+.cloudy-bg {
+    background: linear-gradient(135deg, #5F6CAF, #9DB2BF);
+}
+
+.default-bg {
+    background: linear-gradient(135deg, #5F6CAF, #9DB2BF);
+}
+
+/* App Title */
+.app-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth gradient animation */
+.sunny-bg,
+.rainy-bg,
+.snowy-bg,
+.cloudy-bg,
+.default-bg {
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
