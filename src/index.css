@@ -196,18 +196,18 @@ body {
     }
 
     .search-bar {
-        width: 50%;
+        width: 80%;
         flex-direction: column;
     }
 
     .search-bar input,
     .search-bar button {
-        width: 50%;
+        width: 80%;
         border-radius: 15px;
     }
 
     .weather-screen {
-        width: 80%;
+        width: 70%;
     }
 }
 
