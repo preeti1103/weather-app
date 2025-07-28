@@ -170,6 +170,7 @@ body {
     100% {
         background-position: 0% 50%;
     }
+
 }
 
 /* ======= Responsive Design ======= */
@@ -195,14 +196,18 @@ body {
     }
 
     .search-bar {
-        width: 100%;
+        width: 50%;
         flex-direction: column;
     }
 
     .search-bar input,
     .search-bar button {
-        width: 100%;
+        width: 50%;
         border-radius: 15px;
+    }
+
+    .weather-screen {
+        width: 80%;
     }
 }
 
