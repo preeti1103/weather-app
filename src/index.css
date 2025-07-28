@@ -171,3 +171,60 @@ body {
         background-position: 0% 50%;
     }
 }
+
+/* ======= Responsive Design ======= */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .city {
+        font-size: 2rem;
+    }
+
+    .big-temp {
+        font-size: 4.5rem;
+    }
+
+    .condition {
+        font-size: 1.2rem;
+    }
+
+    .high-low {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .city {
+        font-size: 1.8rem;
+    }
+
+    .big-temp {
+        font-size: 3.5rem;
+    }
+
+    .condition {
+        font-size: 1rem;
+    }
+
+    .high-low {
+        font-size: 0.9rem;
+    }
+
+    .weather-screen {
+        width: 95%;
+        padding: 20px;
+    }
+}
